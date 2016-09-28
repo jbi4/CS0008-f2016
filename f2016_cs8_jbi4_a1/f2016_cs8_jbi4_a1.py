@@ -21,10 +21,10 @@ if uom == "Metric" or uom == "metric":
     guu = gum * .264172
 #Have the user input the distance driven and gas used in USC and convert to metric
 elif uom == "USC" or uom == "usc":
-        ddu = float(input("Distance driven in miles?"))
-        guu = float(input("Gas used in gallons?"))
-        ddm = ddu * 1.60934
-        gum = guu * 3.78541
+    ddu = float(input("Distance driven in miles?"))
+    guu = float(input("Gas used in gallons?"))
+    ddm = ddu * 1.60934
+    gum = guu * 3.78541
 #print error if an invalic unit of measure was given
 else:
     print("Error: Invalid unit of measure.")
