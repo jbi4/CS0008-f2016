@@ -10,7 +10,13 @@
 #
 # Notes:
 
-
+#Set all future variables to 0
+uom = 0
+ddm = 0
+gum = 0
+ddu = 0
+fcm = 0
+fcu = 0
 #Start by asking what unit of measure the user would like to enter the data as
 uom = input("What unit of measure would you like to use, USC or Metric?")
 #Have the user input the distance driven and gas used in metrics, check to make sure inputs are positive, and convert to USC
@@ -44,5 +50,14 @@ elif fcm > 10 and fcm <= 15:
     gcr = "Average"
 elif fcm > 8 and fcm <= 10:
     gcr = "Good"
-else:
+elif fcm <= 8 and fcm > 0:
     gcr = "Excellent"
+else:
+    gcr = "Error"
+#print the results to display the distance driven, gas used, fuel consumption, and the gas consumption rating
+print("\t\t\t\t\t\t\t\tUSC\t\t\t\t\tMetric")
+print("Distance ______________:", format(ddu,'11.3f'),"miles"'\t''\t',format(ddm,'11.3f'),"Km")
+print("Gas ___________________:", format(guu,'11.3f'),"gallons"'\t',format(gum,'11.3f'),"Liters")
+print("Consumption ___________:", format(fcu,'11.3f'),"mpg"'\t''\t',format(fcm,'11.3f'),"1/1000 Km")
+print("")
+print("Gas Consumption Rating : ",gcr)
