@@ -25,7 +25,7 @@ uom = input("What unit of measure would you like to use, USC or Metric?")
 if uom == "Metric" or uom == "metric":
     ddm = float(input("Distance driven in Km?"))
     gum = float(input("Gas used in Liters?"))
-    if ddm < 0 or gum < 0:
+    if ddm <= 0 or gum <= 0:
         print("Error: Invalid inputs.")
     ddu = ddm * .621371
     guu = gum * .264172
@@ -34,11 +34,11 @@ if uom == "Metric" or uom == "metric":
 elif uom == "USC" or uom == "usc":
     ddu = float(input("Distance driven in miles?"))
     guu = float(input("Gas used in gallons?"))
-    if ddu < 0 or guu < 0:
+    if ddu <= 0 or guu <= 0:
         print("Error: Invalid inputs.")
     ddm = ddu * 1.60934
     gum = guu * 3.78541
-#print error if an invalic unit of measure was given
+#print error if an invalid unit of measure was given
 else:
     print("Error: Invalid unit of measure.")
 #check if the user put in a negative number or zero

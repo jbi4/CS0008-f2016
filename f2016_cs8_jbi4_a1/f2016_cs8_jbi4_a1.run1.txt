@@ -1,0 +1,9 @@
+What unit of measure would you like to use, USC or Metric?Metric
+Distance driven in Km?100
+Gas used in Liters?4
+								USC					Metric
+Distance ______________:      62.137 miles		     100.000 Km
+Gas ___________________:       1.057 gallons	       4.000 Liters
+Consumption ___________:      58.804 mpg		       4.000 1/1000 Km
+
+Gas Consumption Rating :  Excellent

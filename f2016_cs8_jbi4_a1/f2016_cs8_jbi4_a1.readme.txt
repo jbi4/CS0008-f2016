@@ -1,0 +1,19 @@
+name : Joseph Isaacson
+email : jbi4@pitt.edu
+date : 9/30/2016
+class : CS0008-f2016
+instructor : Max Novelli (man8@pitt.edu)
+
+For this program, I tried to figure out the simplest way to write my code to limit my confusion. I started off leaving a
+spot for me to set all my variables to 0. Then I got my first input by asking the user to decide which unit of measure
+they would like to use. I put that they should say USC or Metric. I then used an if-else-if statement to get inputs for
+distance driven and gas usage for metrics and then for USC. I also converted the two inputs to the other unit of
+measure in the statement so that all four of those variables, distance driven and gas usage for each, were set. I also
+have a check for invalid inputs and print an error message to show the user if they needed to change the inputs. I used
+else at the end to print an error for any invalid input into the unit of measure prompt. I then solved for the fuel
+consumption by checking to make sure the inputs were all greater than 0. If they were I solved for the fuel consumption
+of both units of measure, and if they were not, I set all the variables to zero. Doing that would print an error under
+the gas consumption rating. This was my next step as I used if-else-if to calculate the gas consumption rating from the
+fuel consumption I had just calculated. The error occurs if invalid inputs were put into either the distance driven or
+gas usage amounts. My final step was to format the numbers and print the output like the chart on the assignment. I used
+the tab function and the format function along with my variables to set up the output.
