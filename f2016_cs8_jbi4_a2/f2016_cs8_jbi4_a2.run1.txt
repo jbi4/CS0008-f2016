@@ -1,0 +1,9 @@
+First file: f2016_cs8_a2.data.1.csv
+Partial Total # of lines   :          50
+Partial distance run       :    2298.967
+Next file: f2016_cs8_a2.data.2.csv
+Partial Total # of lines   :          50
+Partial distance run       :    2195.061
+Next file:
+Total # of lines           :         100
+Total distance run         :    4494.027

@@ -6,3 +6,10 @@ class : CS0008-f2016
 instructor : Max Novelli (man8@pitt.edu)
 
 Description: Second Assignment
+
+The process for this assignment was to start by defining the two functions, one to process each individual file and one
+to print the outcome. In processing the file, I split the terms to be able to accumulate distance and also added a
+counter to count the lines. The printkv is used to print different formats for different types of characters.
+The body starts with initializing the total distance and total line variables. Next, I needed to get an input for the
+file to be opened. After we can run process file and return the outcomes. I loop this process to run the totals and then
+close the file and ask for the next one still in the loop. The last thought is to print the totals.
