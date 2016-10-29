@@ -1,0 +1,8 @@
+Template for code submission
+name : Joseph Isaacson
+email : jbi4@pitt.edu
+date : 10/29/2016
+class : CS0008-f2016
+instructor : Max Novelli (man8@pitt.edu)
+
+Description: Second Assignment
