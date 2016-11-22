@@ -21,8 +21,9 @@ source = [line.strip('\n') for line in source]
 # close the master file
 fh.close()
 
-# initialize a new list
+# initialize a new list and a counter of files
 newlist = []
+numfiles = 0
 # open each individual file
 for file in source:
     # open the file
@@ -35,10 +36,42 @@ for file in source:
     datafile1 = datafile[1:]
     # append the new list so all of the entries are in 1 list
     newlist.append(datafile1)
-    # flatten the list so
-    flatlist = []
-    for sublist in newlist:
-        for val in sublist:
-            flatlist.append(val)
-print(flatlist)
-print(len(flatlist))
+    # count the number of files
+    numfiles += 1
+
+# flatten the list so there are 450 separate entries
+flatlist = []
+for sublist in newlist:
+    for val in sublist:
+        flatlist.append(val)
+    # flatten the list so there are 900 separate entries
+flatlist2 = []
+for sublist in flatlist:
+    for val in sublist:
+        flatlist2.append(val)
+
+# initialize a variable for total distance
+totaldist = 0
+# calculate the total distance
+for i in range(1, len(flatlist2), 2):
+    totaldist += float(flatlist2[i])
+
+
+
+
+
+
+print("Number of Input files read     : ", numfiles)
+print("Total number of lines read     : ", len(flatlist))
+print()
+print("total distance run             : ", totaldist)
+print()
+print("max distance run               : ", )
+print("   by participant              : ",)
+print()
+print("min distance run               : ", )
+print("   by participant              : ", )
+print("Total number of participants   : ", )
+print("Number of participants")
+print("with multiple records          : ", )
+
