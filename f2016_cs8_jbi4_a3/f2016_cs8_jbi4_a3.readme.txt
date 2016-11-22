@@ -6,3 +6,10 @@ class : CS0008-f2016
 instructor : Max Novelli (man8@pitt.edu)
 
 Description: Third Assignment
+
+My thought process for this assignment was to go through and read both files. Then to create lists of the information
+and iterate through to see the distances run and by who.
+
+I do not want to make excuses and I accept the grade I am given. I was traveling and had a funeral the past few days and
+also had limited internet access. I was unable to get straight counting the names and acheiving the names from the min
+and max.

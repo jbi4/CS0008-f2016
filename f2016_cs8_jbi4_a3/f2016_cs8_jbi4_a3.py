@@ -67,6 +67,20 @@ for i in range(1, len(flatlist2), 2):
 maxname = 0
 minname = 0
 
+# calculate the number of participants
+namelist = []
+for i in range(0, len(flatlist2), 2):
+    namelist.append(flatlist2[i])
+    setname = set(namelist)
+    tnp = len(setname)
+
+#create the new file
+newfile = open(newfile.txt, 'a')
+
+
+
+
+
 
 
 print("Number of Input files read     : ", numfiles)
@@ -80,7 +94,7 @@ print()
 print("min distance run               : ", mindist)
 print("   by participant              : ", minname)
 print()
-print("Total number of participants   : ", )
+print("Total number of participants   : ", tnp)
 print("Number of participants")
 print("with multiple records          : ", )
 
