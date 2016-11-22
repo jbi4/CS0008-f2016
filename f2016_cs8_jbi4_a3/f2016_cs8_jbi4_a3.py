@@ -75,7 +75,7 @@ for i in range(0, len(flatlist2), 2):
     tnp = len(setname)
 
 #create the new file
-newfile = open(newfile.txt, 'a')
+# newfile = open(newfile.txt, 'a')
 
 
 
