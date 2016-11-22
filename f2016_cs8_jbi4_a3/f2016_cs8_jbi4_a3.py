@@ -31,8 +31,14 @@ for file in source:
     datafile = fh.readlines()
     # make each list separate without the new line character
     datafile = [line.strip('\n').split(',') for line in datafile]
+    # remove the first line of each file, the line with name and distance
     datafile1 = datafile[1:]
+    # append the new list so all of the entries are in 1 list
     newlist.append(datafile1)
-    str(newlist)
-print(newlist)
-print(len(newlist))
+    # flatten the list so
+    flatlist = []
+    for sublist in newlist:
+        for val in sublist:
+            flatlist.append(val)
+print(flatlist)
+print(len(flatlist))
