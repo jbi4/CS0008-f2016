@@ -44,20 +44,28 @@ flatlist = []
 for sublist in newlist:
     for val in sublist:
         flatlist.append(val)
-    # flatten the list so there are 900 separate entries
+# flatten the list so there are 900 separate entries
 flatlist2 = []
 for sublist in flatlist:
     for val in sublist:
         flatlist2.append(val)
 
+
+
+
 # initialize a variable for total distance
 totaldist = 0
+distlist = []
 # calculate the total distance
 for i in range(1, len(flatlist2), 2):
     totaldist += float(flatlist2[i])
+    distlist.append(float(flatlist2[i]))
+    # get the max and min distance
+    maxdist = max(distlist)
+    mindist = min(distlist)
 
-
-
+maxname = 0
+minname = 0
 
 
 
@@ -66,11 +74,12 @@ print("Total number of lines read     : ", len(flatlist))
 print()
 print("total distance run             : ", totaldist)
 print()
-print("max distance run               : ", )
-print("   by participant              : ",)
+print("max distance run               : ", maxdist)
+print("   by participant              : ", maxname)
 print()
-print("min distance run               : ", )
-print("   by participant              : ", )
+print("min distance run               : ", mindist)
+print("   by participant              : ", minname)
+print()
 print("Total number of participants   : ", )
 print("Number of participants")
 print("with multiple records          : ", )
