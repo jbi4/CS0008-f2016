@@ -51,7 +51,7 @@ tl = 0
 file = input('First file: ')
 # loop the file as long as there is a file name
 while file and file != "q" and file != "quit":
-# open the file and run the process file function
+    # open the file and run the process file function
     fo = open(file, 'r')
     pd, pl = processfile(fo)
     # run the printkv function to show the partial totals
