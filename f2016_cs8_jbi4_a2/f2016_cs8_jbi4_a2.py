@@ -9,6 +9,7 @@
 # Example:
 #
 # Notes:
+# MN: respect indentation with comments too
 
 # define the process file function
 def processfile(fo):
@@ -63,6 +64,7 @@ while file and file != "q" and file != "quit":
     tl += pl
     # ask the user to input the next file to process
     file = input("Next file: ")
+
 # print the total amounts for lines and distance
 printkv("Total # of lines           : ", tl)
 printkv("Total distance run         : ", td)

@@ -9,6 +9,10 @@
 # Example:
 #
 # Notes: f2016_cs8_a3.data.txt
+# MN: output file is missing
+#     missing computing participants with multiple runs 
+#     missing min and max participant names
+#
 
 # ask the user to input the master data file
 fn = input("Name of file with all other file names: ")
@@ -44,6 +48,8 @@ flatlist = []
 for sublist in newlist:
     for val in sublist:
         flatlist.append(val)
+# MN: why do you create this second flat list?
+#     you should explain why and how it is built?
 # flatten the list so there are 900 separate entries
 flatlist2 = []
 for sublist in flatlist:
@@ -60,6 +66,8 @@ distlist = []
 for i in range(1, len(flatlist2), 2):
     totaldist += float(flatlist2[i])
     distlist.append(float(flatlist2[i]))
+    # MN: you are executing the following 2 statements at every iteration, 
+    #     they could be executed only once at the end
     # get the max and min distance
     maxdist = max(distlist)
     mindist = min(distlist)
