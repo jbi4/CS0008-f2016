@@ -1,0 +1,19 @@
+Template for code submission
+name : Joseph Isaacson
+email : jbi4@pitt.edu
+date : 12/15/2016
+class : CS0008-f2016
+instructor : Max Novelli (man8@pitt.edu)
+
+Description: Final Project
+
+My thought process for this assignment was to go through my assignment three. I initially missed using a dictionary and
+when Alex helped us in class with this I modified my assignment to use a dictionary. For the class part of this
+assignment, I defined a class and added the name, runs, and distance as the initial categories. I then followed the
+prompt to create the other class abilities.
+
+
+
+As a side note, I just wanted to say thank you again. I am a senior business student, who just took this class to get
+some general programming knowledge, more about the methods and ways of thinking rather than specifically python. I
+appreciate all of your help and teaching. I really think I learned a lot so thank you!

@@ -107,39 +107,52 @@ for key in global_dict:
         mindist = min(llist)
         # set the new key for who ran the least
         minname = key
-
+#close the output file
 outfile.close()
 
+# start the class
 class Runinfo:
+    # initialize the name, distance and number of runs
     name = "unknown"
     distance = 0
     runs = 0
 
+    # define the initiial class
     def __init__(self, name, dist=0):
+        # make name equal the name
         self.name = name
+        # if the distance is a number not 0 add the distance and make the runs 1
         if dist > 0:
             self.dist = dist
             self.runs = 1
+    # define adding one distance to the class
     def addDistance(self, dist):
+        # if the distance is a number not 0 add the distance and add 1 to the runs
         if dist > 0:
             self.dist += dist
             self.runs += 1
-
+    # define adding multiply distances to the class
     def addDistances(self, distances):
+        # loop for all distances to be added
         for dist in distances:
+            # if the distance is a number not 0 add the distance and add 1 to the runs
             if dist > 0:
                 self.dist += dist
                 self.runs += 1
+    # class method to get the name, returns the name
     def getName(self):
         return self.name
+    # class method to get the distance, returns the distance
     def getDist(self):
         return self.dist
+    # class method to get the runs, returns the number of runs
     def getRuns(self):
         return self.runs
+    # stringify, turn the name, distance and runs into a string
     def __str__(self):
         return "Name :" + format(self.name, '>20s') + "Disance :" + format(self.dist, '9.4f') + "Runs :" \
         + format(self.runs, '4d')
-
+    # return the name, distance, and runs into the csv output file
     def tocsv(self):
         return ','.join((self.name, str(self.runs), str(self.dist)))
 
