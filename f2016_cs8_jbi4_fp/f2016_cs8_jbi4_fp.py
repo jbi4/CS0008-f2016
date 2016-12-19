@@ -9,6 +9,9 @@
 # Example:
 #
 # Notes: f2016_cs8_fp.data.txt
+#
+# MN: you did not use the class that you defined
+#
 
 # Initialize a global dictionary
 global_dict = {}
